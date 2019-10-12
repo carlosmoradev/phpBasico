@@ -48,10 +48,10 @@ $div = $_POST['div'];
     <h1>Calculadora en php</h1>
     <p>Se reciben dos numeros y se ejecuta con ellos las cuatro operaciones básicas.</p>
     <form action="" method="post">
-        <label for="valor1"></label>
-        <input type="number" name="valor1" id="">
-        <label for="valor2"></label>
-        <input type="number" name="valor2" id="">
+        <label for="valor1">Primer Valor</label><br/>
+        <input type="number" name="valor1" id=""><br/>
+        <label for="valor2">Segundo Valor</label><br/>
+        <input type="number" name="valor2" id=""><br/>
         <input type="submit" value="Sumar" name="sum">
         <input type="submit" value="Restar" name="res">
         <input type="submit" value="Multiplicar" name="mul">
