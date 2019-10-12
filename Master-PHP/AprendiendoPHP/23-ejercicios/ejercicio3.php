@@ -26,7 +26,10 @@ function division($valor1, $valor2){
 //Valores recibidos por post
 $valor1 = $_POST['valor1'];
 $valor2 = $_POST['valor2'];
-
+$sum = $_POST['sum'];
+$res = $_POST['res'];
+$mul = $_POST['mul'];
+$div = $_POST['div'];
 
 
 
@@ -58,22 +61,22 @@ $valor2 = $_POST['valor2'];
 
     <?php
     
-    if(isset($_POST['sum'])){
+    if(isset($sum)){
         $resultado = "La suma es: ".suma($valor1, $valor2);
         echo $resultado;
     }
     
-    if(isset($_POST['res'])){
+    if(isset($res)){
         $resultado = "La resta es: ".resta($valor1, $valor2);
         echo $resultado;
     }
     
-    if(isset($_POST['mul'])){
+    if(isset($mul)){
         $resultado = "La Multiplicacion es: ".multiplicacion($valor1, $valor2);
         echo $resultado;
     }
     
-    if(isset($_POST['div'])){
+    if(isset($div)){
         $resultado = "La division es: ".division($valor1, $valor2);
         echo $resultado;
     }
